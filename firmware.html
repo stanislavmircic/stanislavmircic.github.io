@@ -1,43 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stanislav Mircic - Firmware</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header id="header">
-        <!-- Navigation will be inserted here -->
-    </header>
-
-    <main>
-        <section class="sc-content content-section">
-            <h1>Firmware</h1>
-            <div class="card">
-                <h2>Firmware Project</h2>
-                <p>Firmware project description goes here.</p>
-            </div>
-        </section>
-    </main>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            fetch('nav.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('header').innerHTML = data;
-                    
-                    // Highlight current page in navigation
-                    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-                    const currentLink = document.querySelector(`nav a[href="${currentPage}"]`);
-                    if (currentLink) {
-                        currentLink.classList.add('active');
-                    }
-                })
-                .catch(error => {
-                    console.error('Error loading navigation:', error);
-                });
-        });
-    </script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stanislav Mircic - Firmware</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header id="header">
+            <!-- Navigation will be inserted here -->
+        </header>
+        <main>
+            <section class="sc-content content-section">
+                <h1>Firmware</h1>
+                <h2>Educational robot - software architect &amp; firmware developer for ESP32 </h2>
+                <p>The goal of this project was to make a robot controlled by a computer model of a biological brain. Novel robot enabled students to perform computational neuroscience investigations by designing brains and observing their behavior. The robot is designed to serve as an educational tool for classes focused on Neuroscience and AI.
+</p>
+                <p>
+I have several roles on this project and one of them was to develop firmware for several versions of the robot prototype. First version of the firmware was made for ATMega328 and second version was made for ESP32-CAM board.
+</p>
+                <p>
+                    Main firmware features: 
+                    <br>
+                    - real time streaming of HD video over via WiFi using web sockets 
+                    <br>
+                    - measurement and real time streaming of sensor data (distance, encoders) via WiFi 
+                    <br>
+                    - parsing and executing commands from host computer 
+                    <br>
+                    - controlling motors 
+                    <br>
+                    - controlling RGB LEDs 
+                    <br>
+                    - generating sounds based on commands received from host computer 
+                    <br>
+                    - establishing WiFi access point on robot 
+                    <br>
+                    <br>
+                    Additional roles on the project: 
+                    <br>
+                    - research hardware and propose overall hardware architecture for the first prototype 
+                    <br>
+                    - research and propose architecture for the first software solution that involved firmware, iOS mobile development, C++ desktop development and C++/MATLAB integration. 
+                    <br>
+                    <br>
+                    This is ongoing project that already received two NIH grants and successfully produced several prototypes. Robot was successfully tested in schools (please see the video below). 
+                </p>
+                <div class="sc-video" style="width:100%;max-width:100%;position:relative;">
+                    <div style="width:100%;position:relative;overflow:hidden;height:0;padding-bottom:59.524%">
+                        <iframe height="100%" frameborder="0" width="100%" style="position:absolute;top:0;left:0" allowfullscreen="" src="https://www.youtube.com/embed/gNkJ2hmodlw?wmode=transparent&amp;"></iframe>
+                    </div>
+                </div>
+                <p>
+                    <br>
+                    <br>
+                    Furthermore, comprehensive information regarding the hardware and software can be found in the peer-reviewed paper: 
+                    <br>
+                    Harris et al., Neurorobotics Workshop for High School Students Promotes Competence and Confidence in Computational Neuroscience
+Frontiers in Neurorobotics · Feb 13, 2020  
+                </p>
+            </section>
+        </main>
+        <script>        document.addEventListener('DOMContentLoaded', function() {            fetch('nav.html')                .then(response => response.text())                .then(data => {                    document.getElementById('header').innerHTML = data;                                        // Highlight current page in navigation                    const currentPage = window.location.pathname.split('/').pop() || 'index.html';                    const currentLink = document.querySelector(`nav a[href="${currentPage}"]`);                    if (currentLink) {                        currentLink.classList.add('active');                    }                })                .catch(error => {                    console.error('Error loading navigation:', error);                });        });    </script>
+    </body>
 </html>
