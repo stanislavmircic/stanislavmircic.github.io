@@ -89,27 +89,160 @@ Frontiers in Neurorobotics · Feb 13, 2020 </a>
                 </p>
                 <p> </p>
                 <p></p>
-                <h2>Click to edit</h2>
+                <h2>Firmware development for BLE controlled cyborg: RoboRoach </h2>
+                <p>Goal of this project was to update and rewrite firmware for wirelessly controlled movement of a live cockroach by microstimulation of the antenna nerves.
+</p>
+                <p>
+On this project I had to update firmware for BLE TI CC2540 and to rewrite whole firmware for a new hardware platform based on Cypress PSoC 4 BLE (CY8C4247LQI-BL483).
+</p>
+                <p>
+Firmware was written in C an I used PSoC™ Creator IDE and IAR Embedded Workbench.
+</p>
+                <p>
+Beside firmware I was also updating iOS application in Objective C.
+</p>
+                <p>
+This was very unique and fun project!  Check out the official product page <a href="http://backyardbrains.com/products/roboroach" class="">here</a>.</p>
+                <div class="sc-video" style="width:100%;max-width:100%;position:relative;">
+                    <div style="width:100%;position:relative;overflow:hidden;height:0;padding-bottom:59.524%">
+                        <iframe height="100%" frameborder="0" width="100%" style="position:absolute;top:0;left:0" allowfullscreen="" src="https://www.youtube.com/embed/L0jBzi-gKco?wmode=transparent&amp;"></iframe>
+                    </div>
+                </div>
+                <p> </p>
+                <img alt="" style="width:88.0088%;" src="images/image-original-sc67a7d9ac179c1-800.jpg" srcset="images/image-original-sc67a7d9ac179c1-800.jpg 800w,images/image-original-sc67a7d9ac179c1-320.jpg 320w">
+                <img alt="" style="width:100%;" src="images/image-original-sc67a7d9bede1f0-1000.jpg" srcset="images/image-original-sc67a7d9bede1f0-1000.jpg 1000w,images/image-original-sc67a7d9bede1f0-640.jpg 640w,images/image-original-sc67a7d9bede1f0-320.jpg 320w">
+                <p> </p>
+                <h2>ATmega32U4 firmware development for recording of plant el. potentials </h2>
+                <div class="sc-video" style="width:100%;max-width:100%;position:relative;">
+                    <div style="width:100%;position:relative;overflow:hidden;height:0;padding-bottom:59.524%">
+                        <iframe height="100%" frameborder="0" width="100%" style="position:absolute;top:0;left:0" allowfullscreen="" src="https://www.youtube.com/embed/pvBlSFVmoaw?wmode=transparent&amp;"></iframe>
+                    </div>
+                </div>
+                <p> </p>
+                <p>Goal of this project was to make a device based on ATmega32u4 that will record plant electric signals and send them to main application via USB or audio cable. Also, the device is able to stimulate electrically sensitive plants like Mimosa Pudica and generate plant movement.
+</p>
+                <p>
+Device is called Plant SpikerBox and it was intended to be used in schools and universities.
+</p>
+                <p>
+Device transmits data through CDC USB for Android, Windows, macOS, Linux and Web platforms and through audio cable for iOS devices. Data is sampled and sent in real time at 10ksamples/second.
+</p>
+                <p>
+Particular challenge for this device was to send low frequency &lt;5Hz plant data via audio cable to iOS device. For that purposes we used AM modulation/demodulation of the signal.
+</p>
+                <p>
+I wrote complete firmware and collaborate/consulted in the hardware design and debugging phase.
+Since the recording of the plant electric potentials is a new topic we had to do a lot of R&amp;D work in order to make reliable device.
+</p>
+                <p>
+Firmware is written in Arduino IDE and it is open source so that students in the schools/universities can modify it.
+</p>
+                <p>
+Also, I wrote Windows/macOS code in C++ and Objective-C code for iOS that supports communication with this device. </p>
+                <img alt="" style="width:100%;" src="images/image-original-sc67a7db0968273-928.jpg" srcset="images/image-original-sc67a7db0968273-928.jpg 928w,images/image-original-sc67a7db0968273-640.jpg 640w,images/image-original-sc67a7db0968273-320.jpg 320w">
+                <p></p>
+                <img alt="" style="width:100%;" src="images/image-original-sc67a7db3b3d5a6-928.jpg" srcset="images/image-original-sc67a7db3b3d5a6-928.jpg 928w,images/image-original-sc67a7db3b3d5a6-640.jpg 640w,images/image-original-sc67a7db3b3d5a6-320.jpg 320w">
+                <p> </p>
+                <p> </p>
+                <p> </p>
+                <p></p>
+                <h2>MSP430 firmware development for EMG recording: Muscle SpikerBox Pro </h2>
+                <div class="sc-video" style="width:100%;max-width:100%;position:relative;">
+                    <div style="width:100%;position:relative;overflow:hidden;height:0;padding-bottom:59.524%">
+                        <iframe height="100%" frameborder="0" width="100%" style="position:absolute;top:0;left:0" allowfullscreen="" src="https://www.youtube.com/embed/ORKiNwgW9Lc?wmode=transparent&amp;"></iframe>
+                    </div>
+                </div>
+                <p> </p>
+                <p>
+                    Goal of this project was to make a device based on MSP430 that will record EMG signal from human body. Device is intended to be used in schools and universities. 
+                    <br>
+                    The device transmits data through HID and CDC USB and it is compatible with Android, Windows, macOS, Linux and Web platforms. 
+                </p>
+                <p>
+                    I wrote whole firmware on this project and collaborate/consulted in the hardware design and debugging phase. Firmware is written in C in Code Composer and it is open source on GitHub. 
+                    <br>
+                    <br>
+                    First version of this product was using HID packets to transmit real time electrophysiological measurements (40kB/s of samples). HID device class was used to avoid installation of drivers on supported platforms. 
+                    <br>
+                    Second version of the product was using CDC device class to enable connection to web platform. 
+                </p>
+                <p>
+                    For the purpose of this project I made a new custom protocol for data formatting that enabled us to send multiple channels and messages embedded into stream of samples. 
+                    <br>
+                    <br>
+                    Also, I wrote Windows/macOS code in C++ that supports communication with this device. 
+                </p>
+                <p>
+                    Device needed to have several additional capabilities: 
+                    <br>
+                    - firmware update capability so I had to implement update of the firmware procedure on the Windows app. 
+                    <br>
+                    - auditory and visual stimulation for Neuroscience experiments 
+                    <br>
+                    - event triggering that needs to be synchronized with signal with sub millisecond error 
+                    <br>
+                    - expansion port that enable user to add additional measuring devices like accelerometers etc. 
+                </p>
+                <img alt="" style="width:100%;" src="images/image-original-sc67a7da5fe9285-928.jpg" srcset="images/image-original-sc67a7da5fe9285-928.jpg 928w,images/image-original-sc67a7da5fe9285-640.jpg 640w,images/image-original-sc67a7da5fe9285-320.jpg 320w">
+                <p> </p>
+                <h2>ATmega32U4 firmware development for ECG, EEG recording device </h2>
+                <img alt="" style="width:100%;" src="images/image-original-sc67a7dbe0a3232-928.jpg" srcset="images/image-original-sc67a7dbe0a3232-928.jpg 928w,images/image-original-sc67a7dbe0a3232-640.jpg 640w,images/image-original-sc67a7dbe0a3232-320.jpg 320w">
+                <p> </p>
+                <p>Goal of this project was to make a device based on ATmega32u4 that will record ECG (heart) and EEG (brain) signals and send them to main application via USB or audio cable.
+</p>
+                <p>
+Device is called Heart&amp; Brains SpikerBox and it was intended to be used in schools and universities.
+</p>
+                <p>
+Device transmits data through CDC USB for Android, Windows, macOS, Linux and Web platforms and through audio cable for iOS devices. Data is sampled and sent in real time at 10ksamples/second.
+</p>
+                <p>
+Particular challenge for this device was to send low frequency &lt;20Hz EEG data via audio cable to iOS device. For that purposes we used AM modulation/demodulation of the signal.
+</p>
+                <p>
+I wrote complete firmware and collaborate/consulted in the hardware design and debugging phase. Firmware is written in Arduino IDE and it is open source so that students in the schools/universities can modify it.
+</p>
+                <p>
+Also, I wrote Windows/macOS code in C++ and Objective-C code for iOS that supports communication with this device.  </p>
+                <img alt="" style="width:100%;" src="images/image-original-sc67a7dc0552766-928.jpg" srcset="images/image-original-sc67a7dc0552766-928.jpg 928w,images/image-original-sc67a7dc0552766-640.jpg 640w,images/image-original-sc67a7dc0552766-320.jpg 320w">
+                <img alt="" style="width:100%;" src="images/image-original-sc67a7dc0d4e623-928.jpg" srcset="images/image-original-sc67a7dc0d4e623-928.jpg 928w,images/image-original-sc67a7dc0d4e623-640.jpg 640w,images/image-original-sc67a7dc0d4e623-320.jpg 320w">
+                <h2>MSP430 firmware development for Neuron SpikerBox Pro </h2>
+                <img alt="" style="width:100%;" src="images/image-original-sc67a7dc744602a-928.jpg" srcset="images/image-original-sc67a7dc744602a-928.jpg 928w,images/image-original-sc67a7dc744602a-640.jpg 640w,images/image-original-sc67a7dc744602a-320.jpg 320w">
+                <p>Goal of this project was to make a device based on MSP430 that will record living neurons.
+The device transmits data through HID and CDC USB and it is compatible with Android, Windows, macOS, Linux and Web platforms.
+</p>
+                <p>I wrote whole firmware on this project and collaborate/consulted in the hardware design and debugging phase. Firmware is written in C in Code Composer.
+</p>
+                <p>
+                    First version of this product was using HID packets to transmit real time electrophysiological measurements (40kB/s of samples). HID device class was used to avoid installation of drivers on supported platforms. 
+                    <br>
+                    Second version of the product was using CDC device class to enable connection to web platform. 
+                </p>
+                <p>
+Data stream that is sent from device to the host app is formatted according to a custom protocol that I made and that enables sending of the embedded messages inside a real time sample stream.
+</p>
+                <p>
+Also, I wrote Windows/macOS code in C++ that supports communication with this device.
+</p>
+                <p>
+                    Device needed to have several additional capabilities: 
+                    <br>
+                    - firmware update capability so I had to implement update of the firmware procedure on the Windows app. 
+                    <br>
+                    - auditory and visual stimulation for Neuroscience experiments 
+                    <br>
+                    - event triggering that needs to be synchronized with signal with sub millisecond error 
+                    <br>
+                    - expansion port that enable user to add additional measuring devices like accelerometers etc.   
+                </p>
+                <img alt="" style="width:100%;" src="images/image-original-sc67a7dc7bd11e5-928.jpg" srcset="images/image-original-sc67a7dc7bd11e5-928.jpg 928w,images/image-original-sc67a7dc7bd11e5-640.jpg 640w,images/image-original-sc67a7dc7bd11e5-320.jpg 320w">
+                <p> </p>
+                <p> </p>
+                <p> </p>
+                <p> </p>
+                <p></p>
             </section>
         </main>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                fetch('nav.html')
-                    .then(response => response.text())
-                    .then(data => {
-                        document.getElementById('header').innerHTML = data;
-                        
-                        // Highlight current page in navigation
-                        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-                        const currentLink = document.querySelector(`nav a[href="${currentPage}"]`);
-                        if (currentLink) {
-                            currentLink.classList.add('active');
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Error loading navigation:', error);
-                    });
-            });
-        </script>
+        <script>            document.addEventListener('DOMContentLoaded', function() {                fetch('nav.html')                    .then(response => response.text())                    .then(data => {                        document.getElementById('header').innerHTML = data;                                                // Highlight current page in navigation                        const currentPage = window.location.pathname.split('/').pop() || 'index.html';                        const currentLink = document.querySelector(`nav a[href="${currentPage}"]`);                        if (currentLink) {                            currentLink.classList.add('active');                        }                    })                    .catch(error => {                        console.error('Error loading navigation:', error);                    });            });        </script>
     </body>
 </html>
