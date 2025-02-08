@@ -1,49 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stanislav Mircic - Machine Learning</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <header id="header">
-        <!-- Navigation will be inserted here -->
-    </header>
-    <main>
-        <section class="sc-content content-section">
-            <h1>Machine Learning</h1>
-            <div class="card">
-                <h2>ML Project</h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stanislav Mircic - Machine Learning</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header id="header">
+            <!-- Navigation will be inserted here -->
+        </header>
+        <main>
+            <section class="sc-content content-section">
+                <h1>Machine Learning</h1>
+                <h2>EEG ERP classification in MATLAB with SVM </h2>
                 <p>The aim of this project was to use MATLAB to record EEG data during visual stimulation and then classify it using Support Vector Machines (SVM).
-                    The AI algorithm for processing of EEG was recognizing if person is looking into image of "face" or some other category like "natural scenery", "house" during time locked visual stimulation.
-                    Whole project was finished during Backyard Brains summer Neuroscience Fellowship on which I was mentor. At the end of the Fellowship a TED video was recorded in which the results are demonstrated (please check the video included here).
-                    
-                    For this project I had to:
-                    - decide on which AI algorithm it will be used to classify multichannel EEG in real time
-                    - implement training and real time inference of the Support Vector Machine (SVM) in MATLAB
-                    - make real time communication between MATLAB and EEG amplifier through serial USB.
-                    
-                    I choose to utilize SVM was driven by the limited size of our training dataset. SVM classification leverages a hyperplane with maximum margin, which translated into robust generalization performance during deployment.
-                    
-                    Whole project is open-source on GitHub and the link is given below.</p>
-
-                    https://github.com/BackyardBrains/Projects/tree/e798d883987ce655c56d09745dec7a74d35bc9f6/Mind%20Reading
-                    https://i.vimeocdn.com/video/699083253-ea3197b47124c96e6a041d1bfb0b255b09a4fee5be3430b9b856bf437b6a043c-d?mw=700&mh=394
-
-
-                    <iframe 
-                    src="https://player.vimeo.com/video/268371045" 
-                    width="100%" 
-                    height="360" 
-                    frameborder="0" 
-                    allow="autoplay; fullscreen; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </section>
-    </main>
-    <script>
+</p>
+                <p>The AI algorithm for processing of EEG was recognizing if person is looking into image of "face" or some other category like "natural scenery", "house" during time locked visual stimulation.
+Whole project was finished during Backyard Brains summer Neuroscience Fellowship on which I was mentor. At the end of the Fellowship a TED video was recorded in which the results are demonstrated (please check the video included here). </p>
+                <p>For this project I had to: </p>
+                <p>
+                    - decide on which AI algorithm it will be used to classify multichannel EEG in real time 
+                    <br>
+                    - implement training and real time inference of the Support Vector Machine (SVM) in MATLAB  
+                    <br>
+                    - make real time communication between MATLAB and EEG amplifier through serial USB.   
+                </p>
+                <p>I choose to utilize SVM was driven by the limited size of our training dataset. SVM classification leverages a hyperplane with maximum margin, which translated into robust generalization performance during deployment. </p>
+                <p>Whole project is <a href="http://github.com/BackyardBrains/Projects/tree/e798d883987ce655c56d09745dec7a74d35bc9f6/Mind%20Reading" class="">open-source on GitHub.</a></p>
+                <div class="sc-video" style="width:100%;max-width:100%;position:relative;">
+                    <div style="width:100%;position:relative;overflow:hidden;height:0;padding-bottom:59.524%">
+                        <iframe height="100%" frameborder="0" width="100%" style="position:absolute;top:0;left:0" src="http://player.vimeo.com/video/268371045?title=0&amp;byline=0&amp;portrait=0"></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script>
         document.addEventListener('DOMContentLoaded', function() {
             fetch('nav.html')
                 .then(response => response.text())
@@ -62,5 +54,5 @@
                 });
         });
     </script>
-</body>
+    </body>
 </html>
