@@ -92,6 +92,24 @@ Frontiers in Neurorobotics · Feb 13, 2020 </a>
                 <h2>Click to edit</h2>
             </section>
         </main>
-        <script>            document.addEventListener('DOMContentLoaded', function() {                fetch('nav.html')                    .then(response => response.text())                    .then(data => {                        document.getElementById('header').innerHTML = data;                                                // Highlight current page in navigation                        const currentPage = window.location.pathname.split('/').pop() || 'index.html';                        const currentLink = document.querySelector(`nav a[href="${currentPage}"]`);                        if (currentLink) {                            currentLink.classList.add('active');                        }                    })                    .catch(error => {                        console.error('Error loading navigation:', error);                    });            });        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                fetch('nav.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('header').innerHTML = data;
+                        
+                        // Highlight current page in navigation
+                        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+                        const currentLink = document.querySelector(`nav a[href="${currentPage}"]`);
+                        if (currentLink) {
+                            currentLink.classList.add('active');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error loading navigation:', error);
+                    });
+            });
+        </script>
     </body>
 </html>
