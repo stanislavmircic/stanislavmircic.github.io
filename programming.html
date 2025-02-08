@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Stanislav Mircic - Programming</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header id="header">
+            <!-- Navigation will be inserted here -->
+        </header>
+        <main>
+            <section class="sc-content content-section">
+                <h1>Programming</h1>
+                <h2>iOS application development for Neuroscience experiment (DCMD) </h2>
+                <p>The objective of this project was to develop an iPad application capable of providing visual stimulation for neuroscience experiments while simultaneously recording the neuronal responses in live insects during the stimulation process.
+</p>
+                <p>
+                    Application was made in Objective-C in xCode IDE and it supports several functionalities: 
+                    <br>
+                    - Generate visual stimulation with looming objects, where the object size follows a specific function over time. 
+                    <br>
+                    - Record neuronal responses using an electrophysiological amplifier, ensuring synchronization with millisecond precision to the stimulation. 
+                    <br>
+                    - Setting and executing stimulation protocols with multiple trials, allowing the definition of parameters such as color, duration, size, and velocity. 
+                    <br>
+                    - Performing statistical analysis on the results and presenting cumulative session graphs as well as individual trial-based displays. 
+                </p>
+                <img alt="" style="width:100%;" src="images/gear-sc67a785cf81a13-960.png" srcset="images/gear-sc67a785cf81a13-1280.png 1280w,images/gear-sc67a785cf81a13-960.png 960w,images/gear-sc67a785cf81a13-640.png 640w,images/gear-sc67a785cf81a13-320.png 320w">
+                <img alt="" style="width:89.54895%;" src="images/graph-sc67a785d71df54-814.png" srcset="images/graph-sc67a785d71df54-814.png 814w,images/graph-sc67a785d71df54-640.png 640w,images/graph-sc67a785d71df54-320.png 320w">
+                <p>
+                    I wrote the whole application during Neuroscience Summer Fellowship on which I was mentor. 
+                    <br>
+                    The application is available as open-source on GitHub and is detailed in the peer-reviewed paper below: 
+                </p>
+                <p><a href="https://pubmed.ncbi.nlm.nih.gov/28690439/" class="">Nguyen DMT, Roper M, Mircic S, Olberg RM, Gage GJ. Grasshopper DCMD: An Undergraduate Electrophysiology Lab for Investigating Single-Unit Responses to Behaviorally-Relevant Stimuli. J Undergrad Neurosci Educ. 2017 Jun 15;15(2):A162-A173. PMID: 28690439; PMCID: PMC5480846.</a></p>
+            </section>
+        </main>
+        <script>        document.addEventListener('DOMContentLoaded', function() {            fetch('nav.html')                .then(response => response.text())                .then(data => {                    document.getElementById('header').innerHTML = data;                                        // Highlight current page in navigation                    const currentPage = window.location.pathname.split('/').pop() || 'index.html';                    const currentLink = document.querySelector(`nav a[href="${currentPage}"]`);                    if (currentLink) {                        currentLink.classList.add('active');                    }                })                .catch(error => {                    console.error('Error loading navigation:', error);                });        });    </script>
+    </body>
+</html>
