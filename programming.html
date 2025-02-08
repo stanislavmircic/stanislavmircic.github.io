@@ -37,6 +37,24 @@
                 <p><a href="https://pubmed.ncbi.nlm.nih.gov/28690439/" class="">Nguyen DMT, Roper M, Mircic S, Olberg RM, Gage GJ. Grasshopper DCMD: An Undergraduate Electrophysiology Lab for Investigating Single-Unit Responses to Behaviorally-Relevant Stimuli. J Undergrad Neurosci Educ. 2017 Jun 15;15(2):A162-A173. PMID: 28690439; PMCID: PMC5480846.</a></p>
             </section>
         </main>
-        <script>        document.addEventListener('DOMContentLoaded', function() {            fetch('nav.html')                .then(response => response.text())                .then(data => {                    document.getElementById('header').innerHTML = data;                                        // Highlight current page in navigation                    const currentPage = window.location.pathname.split('/').pop() || 'index.html';                    const currentLink = document.querySelector(`nav a[href="${currentPage}"]`);                    if (currentLink) {                        currentLink.classList.add('active');                    }                })                .catch(error => {                    console.error('Error loading navigation:', error);                });        });    </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                fetch('nav.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('header').innerHTML = data;
+                        
+                        // Highlight current page in navigation
+                        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+                        const currentLink = document.querySelector(`nav a[href="${currentPage}"]`);
+                        if (currentLink) {
+                            currentLink.classList.add('active');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error loading navigation:', error);
+                    });
+            });
+        </script>
     </body>
 </html>
