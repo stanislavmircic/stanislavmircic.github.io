@@ -84,3 +84,10 @@ p {
 .card:hover {
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
+
+
+/* Add new style for active navigation item */
+nav a.active {
+    background-color: var(--hover-bg);
+    color: var(--link-color);
+}
