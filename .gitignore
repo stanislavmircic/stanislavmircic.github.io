@@ -1,0 +1,8 @@
+# Ignore Sitecake CMS core files
+/sitecake/
+/sitecake.php
+
+# Ignore backup or cache files Sitecake might generate
+/sitecake-temp/
+/sitecake-backup/
+/sitecake-trash/
