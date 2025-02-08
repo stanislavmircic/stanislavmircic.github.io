@@ -157,7 +157,23 @@ In the development process, I utilized xCode for creating the iOS application an
                 <p>
 Whole project is open-source and can be found on the <a href="https://github.com/BackyardBrains/Opto-Stimmer/tree/master" class="">GitHub</a>.</p>
                 <p> </p>
+                <h2>EEG auditory P300 ERP data analysis in MATLAB </h2>
+                <img alt="" style="width:88.44884%;" src="images/image-original-sc67a7deea0fdb1-804.png" srcset="images/image-original-sc67a7deea0fdb1-804.png 804w,images/image-original-sc67a7deea0fdb1-640.png 640w,images/image-original-sc67a7deea0fdb1-320.png 320w">
                 <p> </p>
+                <p>
+                    The objectives of this project were as follows: 
+                    <br>
+                    - Implement protocol for auditory stimulation for P300 oddball experiment on Arduino device 
+                    <br>
+                    - Perform preprocessing on recorded EEG data, which involved artifact removal, signal filtering, and downsampling. 
+                    <br>
+                    - Compute the average Event-Related Potentials (ERPs) for both oddball and normal stimuli and estimate confidence intervals through Monte Carlo simulations using MATLAB. 
+                    <br>
+                    <br>
+                    The entire project is available as open-source on GitHub (please refer to the attached link for more details). 
+                </p>
+                <p>
+Please note that beside this analysis I wrote firmware for recording device and desktop software for recording of the EEG signal in C++.  </p>
                 <p> </p>
                 <p> </p>
                 <p> </p>
@@ -176,15 +192,6 @@ Whole project is open-source and can be found on the <a href="https://github.com
                         
                         // Highlight current page in navigation
                         const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-                        const currentLink = document.querySelector(`nav a[href="${currentPage}"]`);
-                        if (currentLink) {
-                            currentLink.classList.add('active');
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Error loading navigation:', error);
-                    });
-            });
-        </script>
+                        const currentLink = document.querySelector(`nav a[href="${currentPage}"]`);                        if (currentLink) {                            currentLink.classList.add('active');                        }                    })                    .catch(error => {                        console.error('Error loading navigation:', error);                    });            });        </script>
     </body>
 </html>
