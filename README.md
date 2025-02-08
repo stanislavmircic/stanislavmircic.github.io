@@ -1,1 +1,2 @@
-Ovo je readme file
+This is repository for Stanislav Mircic portfolio
+stanislavmircic.github.io
