@@ -15,7 +15,31 @@
             <h1>Machine Learning</h1>
             <div class="card">
                 <h2>ML Project</h2>
-                <p>Machine learning project description goes here.</p>
+                <p>The aim of this project was to use MATLAB to record EEG data during visual stimulation and then classify it using Support Vector Machines (SVM).
+                    The AI algorithm for processing of EEG was recognizing if person is looking into image of "face" or some other category like "natural scenery", "house" during time locked visual stimulation.
+                    Whole project was finished during Backyard Brains summer Neuroscience Fellowship on which I was mentor. At the end of the Fellowship a TED video was recorded in which the results are demonstrated (please check the video included here).
+                    
+                    For this project I had to:
+                    - decide on which AI algorithm it will be used to classify multichannel EEG in real time
+                    - implement training and real time inference of the Support Vector Machine (SVM) in MATLAB
+                    - make real time communication between MATLAB and EEG amplifier through serial USB.
+                    
+                    I choose to utilize SVM was driven by the limited size of our training dataset. SVM classification leverages a hyperplane with maximum margin, which translated into robust generalization performance during deployment.
+                    
+                    Whole project is open-source on GitHub and the link is given below.</p>
+
+                    https://github.com/BackyardBrains/Projects/tree/e798d883987ce655c56d09745dec7a74d35bc9f6/Mind%20Reading
+                    https://i.vimeocdn.com/video/699083253-ea3197b47124c96e6a041d1bfb0b255b09a4fee5be3430b9b856bf437b6a043c-d?mw=700&mh=394
+
+
+                    <iframe 
+                    src="https://player.vimeo.com/video/268371045" 
+                    width="100%" 
+                    height="360" 
+                    frameborder="0" 
+                    allow="autoplay; fullscreen; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
             </div>
         </section>
     </main>

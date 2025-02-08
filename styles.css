@@ -51,7 +51,6 @@ main {
 
 .content-section {
     margin-bottom: 32px;
-    display: none;
 }
 
 .content-section.active {
