@@ -11,9 +11,41 @@
             <!-- Navigation will be inserted here -->
         </header>
         <main>
+            <div class="projects-grid">
+                <a href="#human" class="sc-content project-card">
+                    <img alt="" style="width:100%;" src="images/human-sc67a8832f1bc21-320.jpg" srcset="images/human-sc67a8832f1bc21-881.jpg 881w,images/human-sc67a8832f1bc21-640.jpg 640w,images/human-sc67a8832f1bc21-320.jpg 320w">
+                    <h3>STM32 firmware for EEG, EKG, EMG device: Human SpikerBox </h3>
+                </a>
+                <a href="#robot" class="sc-content project-card">
+                    <img alt="" style="width:100%;" src="images/spikerbot-sc67a884892f258-320.jpg" srcset="images/spikerbot-sc67a884892f258-630.jpg 630w,images/spikerbot-sc67a884892f258-320.jpg 320w">
+                    <h3>Educational robot - software architect &amp; firmware developer for ESP32 </h3>
+                </a>
+                <a href="#roach" class="sc-content project-card">
+                    <img alt="" style="width:100%;" src="images/image-original-sc67a8862edec61-320.jpg" srcset="images/image-original-sc67a8862edec61-800.jpg 800w,images/image-original-sc67a8862edec61-320.jpg 320w">
+                    <h3>Firmware development for BLE controlled cyborg: RoboRoach  </h3>
+                </a>
+                <a href="#plant" class="sc-content project-card">
+                    <img alt="" style="width:100%;" src="images/image-original-sc67a8865e2382e-320.jpg" srcset="images/image-original-sc67a8865e2382e-928.jpg 928w,images/image-original-sc67a8865e2382e-640.jpg 640w,images/image-original-sc67a8865e2382e-320.jpg 320w">
+                    <h3>ATmega32U4 firmware development for recording of plant el. potentials  </h3>
+                </a>
+                <a href="#muscle" class="sc-content project-card">
+                    <img alt="" style="width:100%;" src="images/image-original-sc67a887af31fbe-320.jpg" srcset="images/image-original-sc67a887af31fbe-928.jpg 928w,images/image-original-sc67a887af31fbe-640.jpg 640w,images/image-original-sc67a887af31fbe-320.jpg 320w">
+                    <h3>MSP430 firmware development for EMG recording: Muscle SpikerBox Pro </h3>
+                </a>
+                <a href="#heart" class="sc-content project-card">
+                    <img alt="" style="width:100%;" src="images/image-original-sc67a88816d0088-320.jpg" srcset="images/image-original-sc67a88816d0088-928.jpg 928w,images/image-original-sc67a88816d0088-640.jpg 640w,images/image-original-sc67a88816d0088-320.jpg 320w">
+                    <h3>ATmega32U4 firmware development for ECG, EEG recording device </h3>
+                </a>
+                <a href="#neuron" class="sc-content project-card">
+                    <img alt="" style="width:100%;" src="images/image-original-sc67a889071291f-320.jpg" srcset="images/image-original-sc67a889071291f-928.jpg 928w,images/image-original-sc67a889071291f-640.jpg 640w,images/image-original-sc67a889071291f-320.jpg 320w">
+                    <h3>MSP430 firmware development for Neuron SpikerBox Pro  </h3>
+                </a>
+            </div>
             <section class="sc-content content-section">
                 <h1>Firmware</h1>
-                <h2>STM32 firmware for EEG, EKG, EMG device: Human SpikerBox </h2>
+                <div class="sc-html">
+                    <h2 id="human">STM32 firmware for EEG, EKG, EMG device: Human SpikerBox </h2>
+                </div>
                 <img alt="" style="width:100%;" src="images/image-original-sc67a7955fe1157-928.jpg" srcset="images/image-original-sc67a7955fe1157-928.jpg 928w,images/image-original-sc67a7955fe1157-640.jpg 640w,images/image-original-sc67a7955fe1157-320.jpg 320w">
                 <p>
                     Goal of this device was to make device based on STM32 that will record EMG, EKG, EOG, EMG and enable additional functionalities needed for conducting Neuroscience experiments
@@ -36,11 +68,14 @@ Target markets were schools and universities.
                     <br>
                     Rare thing about this device was that it supports iAP2 protocol via lightning port for communication with iOS device.  
                 </p>
-                <img alt="" style="width:100%;" src="images/image-original-sc67a79564dd235-928.jpg" srcset="images/image-original-sc67a79564dd235-928.jpg 928w,images/image-original-sc67a79564dd235-640.jpg 640w,images/image-original-sc67a79564dd235-320.jpg 320w">
-                <img alt="" style="width:100%;" src="images/image-original-sc67a795886f1aa-928.jpg" srcset="images/image-original-sc67a795886f1aa-928.jpg 928w,images/image-original-sc67a795886f1aa-640.jpg 640w,images/image-original-sc67a795886f1aa-320.jpg 320w">
+                <img alt="" style="width:100%;" src="images/human2-sc67a883a331681-934.jpg" srcset="images/human2-sc67a883a331681-934.jpg 934w,images/human2-sc67a883a331681-640.jpg 640w,images/human2-sc67a883a331681-320.jpg 320w">
                 <p> </p>
                 <p></p>
-                <h2>Educational robot - software architect &amp; firmware developer for ESP32 </h2>
+                <div class="sc-html">
+                    <h2 id="robot">Educational robot - software architect &amp; firmware developer for ESP32</h2>
+                </div>
+                <img alt="" style="width:64.28571%;" src="images/spikerbot-sc67a8846e0a005-630.jpg" srcset="images/spikerbot-sc67a8846e0a005-630.jpg 630w,images/spikerbot-sc67a8846e0a005-320.jpg 320w">
+                <p> </p>
                 <p>The goal of this project was to make a robot controlled by a computer model of a biological brain. Novel robot enabled students to perform computational neuroscience investigations by designing brains and observing their behavior. The robot is designed to serve as an educational tool for classes focused on Neuroscience and AI.
 </p>
                 <p>
@@ -74,7 +109,7 @@ I have several roles on this project and one of them was to develop firmware for
                     This is ongoing project that already received two NIH grants and successfully produced several prototypes. Robot was successfully tested in schools (please see the video below). 
                 </p>
                 <div class="sc-video" style="width:100%;max-width:100%;position:relative;">
-                    <div style="width:100%;position:relative;overflow:hidden;height:0;padding-bottom:59.516%">
+                    <div style="width:100%;position:relative;overflow:hidden;height:0;padding-bottom:59.495%">
                         <iframe height="100%" frameborder="0" width="100%" style="position:absolute;top:0;left:0" allowfullscreen="" src="https://www.youtube.com/embed/gNkJ2hmodlw?wmode=transparent&amp;"></iframe>
                     </div>
                 </div>
@@ -89,7 +124,9 @@ Frontiers in Neurorobotics · Feb 13, 2020 </a>
                 </p>
                 <p> </p>
                 <p></p>
-                <h2>Firmware development for BLE controlled cyborg: RoboRoach </h2>
+                <div class="sc-html">
+                    <h2 id="roach">Firmware development for BLE controlled cyborg: RoboRoach </h2>
+                </div>
                 <p>Goal of this project was to update and rewrite firmware for wirelessly controlled movement of a live cockroach by microstimulation of the antenna nerves.
 </p>
                 <p>
@@ -104,17 +141,19 @@ Beside firmware I was also updating iOS application in Objective C.
                 <p>
 This was very unique and fun project!  Check out the official product page <a href="http://backyardbrains.com/products/roboroach" class="">here</a>.</p>
                 <div class="sc-video" style="width:100%;max-width:100%;position:relative;">
-                    <div style="width:100%;position:relative;overflow:hidden;height:0;padding-bottom:59.524%">
+                    <div style="width:100%;position:relative;overflow:hidden;height:0;padding-bottom:59.495%">
                         <iframe height="100%" frameborder="0" width="100%" style="position:absolute;top:0;left:0" allowfullscreen="" src="https://www.youtube.com/embed/L0jBzi-gKco?wmode=transparent&amp;"></iframe>
                     </div>
                 </div>
                 <p> </p>
-                <img alt="" style="width:88.0088%;" src="images/image-original-sc67a7d9ac179c1-800.jpg" srcset="images/image-original-sc67a7d9ac179c1-800.jpg 800w,images/image-original-sc67a7d9ac179c1-320.jpg 320w">
+                <img alt="" style="width:87.92536%;" src="images/image-original-sc67a7d9ac179c1-800.jpg" srcset="images/image-original-sc67a7d9ac179c1-800.jpg 800w,images/image-original-sc67a7d9ac179c1-320.jpg 320w">
                 <img alt="" style="width:100%;" src="images/image-original-sc67a7d9bede1f0-1000.jpg" srcset="images/image-original-sc67a7d9bede1f0-1000.jpg 1000w,images/image-original-sc67a7d9bede1f0-640.jpg 640w,images/image-original-sc67a7d9bede1f0-320.jpg 320w">
                 <p> </p>
-                <h2>ATmega32U4 firmware development for recording of plant el. potentials </h2>
+                <div class="sc-html">
+                    <h2 id="plant">ATmega32U4 firmware development for recording of plant el. potentials </h2>
+                </div>
                 <div class="sc-video" style="width:100%;max-width:100%;position:relative;">
-                    <div style="width:100%;position:relative;overflow:hidden;height:0;padding-bottom:59.524%">
+                    <div style="width:100%;position:relative;overflow:hidden;height:0;padding-bottom:59.495%">
                         <iframe height="100%" frameborder="0" width="100%" style="position:absolute;top:0;left:0" allowfullscreen="" src="https://www.youtube.com/embed/pvBlSFVmoaw?wmode=transparent&amp;"></iframe>
                     </div>
                 </div>
@@ -146,9 +185,11 @@ Also, I wrote Windows/macOS code in C++ and Objective-C code for iOS that suppor
                 <p> </p>
                 <p> </p>
                 <p></p>
-                <h2>MSP430 firmware development for EMG recording: Muscle SpikerBox Pro </h2>
+                <div class="sc-html">
+                    <h2 id="muscle">MSP430 firmware development for EMG recording: Muscle SpikerBox Pro</h2>
+                </div>
                 <div class="sc-video" style="width:100%;max-width:100%;position:relative;">
-                    <div style="width:100%;position:relative;overflow:hidden;height:0;padding-bottom:59.524%">
+                    <div style="width:100%;position:relative;overflow:hidden;height:0;padding-bottom:59.495%">
                         <iframe height="100%" frameborder="0" width="100%" style="position:absolute;top:0;left:0" allowfullscreen="" src="https://www.youtube.com/embed/ORKiNwgW9Lc?wmode=transparent&amp;"></iframe>
                     </div>
                 </div>
@@ -185,7 +226,9 @@ Also, I wrote Windows/macOS code in C++ and Objective-C code for iOS that suppor
                 </p>
                 <img alt="" style="width:100%;" src="images/image-original-sc67a7da5fe9285-928.jpg" srcset="images/image-original-sc67a7da5fe9285-928.jpg 928w,images/image-original-sc67a7da5fe9285-640.jpg 640w,images/image-original-sc67a7da5fe9285-320.jpg 320w">
                 <p> </p>
-                <h2>ATmega32U4 firmware development for ECG, EEG recording device </h2>
+                <div class="sc-html">
+                    <h2 id="heart">ATmega32U4 firmware development for ECG, EEG recording device</h2>
+                </div>
                 <img alt="" style="width:100%;" src="images/image-original-sc67a7dbe0a3232-928.jpg" srcset="images/image-original-sc67a7dbe0a3232-928.jpg 928w,images/image-original-sc67a7dbe0a3232-640.jpg 640w,images/image-original-sc67a7dbe0a3232-320.jpg 320w">
                 <p> </p>
                 <p>Goal of this project was to make a device based on ATmega32u4 that will record ECG (heart) and EEG (brain) signals and send them to main application via USB or audio cable.
@@ -206,7 +249,9 @@ I wrote complete firmware and collaborate/consulted in the hardware design and d
 Also, I wrote Windows/macOS code in C++ and Objective-C code for iOS that supports communication with this device.  </p>
                 <img alt="" style="width:100%;" src="images/image-original-sc67a7dc0552766-928.jpg" srcset="images/image-original-sc67a7dc0552766-928.jpg 928w,images/image-original-sc67a7dc0552766-640.jpg 640w,images/image-original-sc67a7dc0552766-320.jpg 320w">
                 <img alt="" style="width:100%;" src="images/image-original-sc67a7dc0d4e623-928.jpg" srcset="images/image-original-sc67a7dc0d4e623-928.jpg 928w,images/image-original-sc67a7dc0d4e623-640.jpg 640w,images/image-original-sc67a7dc0d4e623-320.jpg 320w">
-                <h2>MSP430 firmware development for Neuron SpikerBox Pro </h2>
+                <div class="sc-html">
+                    <h2 id="neuron">MSP430 firmware development for Neuron SpikerBox Pro </h2>
+                </div>
                 <img alt="" style="width:100%;" src="images/image-original-sc67a7dc744602a-928.jpg" srcset="images/image-original-sc67a7dc744602a-928.jpg 928w,images/image-original-sc67a7dc744602a-640.jpg 640w,images/image-original-sc67a7dc744602a-320.jpg 320w">
                 <p>Goal of this project was to make a device based on MSP430 that will record living neurons.
 The device transmits data through HID and CDC USB and it is compatible with Android, Windows, macOS, Linux and Web platforms.
