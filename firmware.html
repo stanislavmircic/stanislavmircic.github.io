@@ -13,8 +13,8 @@
         <main>
             <div class="projects-grid">
                 <a href="#station" class="sc-content project-card">
-                    <img alt="" style="width:100%;" src="images/spike-station-sc67a89e22b8097-320.jpg" srcset="images/spike-station-sc67a89e22b8097-908.jpg 908w,images/spike-station-sc67a89e22b8097-640.jpg 640w,images/spike-station-sc67a89e22b8097-320.jpg 320w">
-                    <h3>Spike Station </h3>
+                    <img alt="" style="width:79.05138%;" src="images/spike-station-sc67a89e22b8097-320.jpg" srcset="images/spike-station-sc67a89e22b8097-908.jpg 908w,images/spike-station-sc67a89e22b8097-640.jpg 640w,images/spike-station-sc67a89e22b8097-320.jpg 320w">
+                    <h3>STM32F4 firmware for  electrophys. amplifier  </h3>
                 </a>
                 <a href="#human" class="sc-content project-card">
                     <img alt="" style="width:100%;" src="images/human-sc67a8832f1bc21-320.jpg" srcset="images/human-sc67a8832f1bc21-881.jpg 881w,images/human-sc67a8832f1bc21-640.jpg 640w,images/human-sc67a8832f1bc21-320.jpg 320w">
@@ -52,16 +52,60 @@
             <section class="sc-content content-section">
                 <h1>Firmware</h1>
                 <div class="sc-html">
-                    <h2 id="station">STM32 firmware for universal amplifier Spike Station </h2>
+                    <h2 id="station">STM32 firmware for Spike Station, versatile electrophysiological amplifier</h2>
                 </div>
                 <img alt="" style="width:92.62926%;" src="images/spike-station-sc67a89e764c0b6-908.jpg" srcset="images/spike-station-sc67a89e764c0b6-908.jpg 908w,images/spike-station-sc67a89e764c0b6-640.jpg 640w,images/spike-station-sc67a89e764c0b6-320.jpg 320w">
-                <p>Spike Station is amplifier</p>
+                <p>
+                    <br>
+                    The Spike Station is a versatile electrophysiological recording and stimulation device designed for neuroscience research. It supports the recording of all human electrophysiological signals, including EMG, ECG, EEG, EOG, as well as extracellular neuron recordings with simultaneous current stimulation. 
+                    <br>
+                    <br>
+                    Built around an STM32F4 microcontroller, the device runs on RTOS while using event handlers to ensure precise sampling and timing. 
+                    <br>
+                    Key Features: 
+                    <br>
+                    - High-Frequency Sampling: Records two channels at 42 kHz, ensuring high temporal resolution. 
+                    <br>
+                    - Adjustable Gain: Variable gain settings ranging from 1 to 15,000, configurable through screen or from the host software. 
+                    <br>
+                    Programmable Filters: 
+                    <br>
+                    - Hardware High-Pass Filter: Adjustable from 0 to 100 Hz, controllable via the host software. 
+                    <br>
+                    - Software Notch Filter: Implemented in firmware to reduce noise. 
+                    <br>
+                    Stimulation Capabilities: 
+                    <br>
+                    - Monophasic and Biphasic Current Stimulation with programmable intensity from 0 to 10 mA. 
+                    <br>
+                    - Configurable stimulation period, pulse duration, and total duration from 0.1 ms to 9999 s. 
+                    <br>
+                    User Interface: 
+                    <br>
+                    - Integrated color touchscreen for direct device control. 
+                    <br>
+                    - Digital inputs for event markers or external stimulation triggers. 
+                    <br>
+                    Cross-Platform Compatibility: 
+                    <br>
+                    - Works seamlessly with Windows, macOS, Linux, iOS, Android, and Web-based application. 
+                    <br>
+                    Audio Control: Integrated sound control functionality. 
+                    <br>
+                    <br>
+                    I developed the complete firmware in C using STM32CubeIDE, ensuring optimized performance and reliability. The firmware is structured to handle precise timing, signal acquisition, and processing while managing real-time multitasking with RTOS.  
+                    <br>
+                    <br>
+                    In addition to firmware I developed and maintained the host application for Windows/macOS/iOS in C++ and Objective-C along with the custom communication protocol for communication with the device. 
+                </p>
+                <p></p>
                 <div class="sc-html">
                     <h2 id="human">STM32 firmware for EEG, EKG, EMG device: Human SpikerBox </h2>
                 </div>
                 <img alt="" style="width:100%;" src="images/image-original-sc67a7955fe1157-928.jpg" srcset="images/image-original-sc67a7955fe1157-928.jpg 928w,images/image-original-sc67a7955fe1157-640.jpg 640w,images/image-original-sc67a7955fe1157-320.jpg 320w">
                 <p>
-                    Goal of this device was to make device based on STM32 that will record EMG, EKG, EOG, EMG and enable additional functionalities needed for conducting Neuroscience experiments
+                    <br>
+                    Goal of this device was to make device based on STM32 that will record EMG, EKG, EOG, EMG and enable additional functionalities needed for conducting Neuroscience experiments.
 Target markets were schools and universities. 
                     <br>
                     Device transmits data through composite USB and it is compatible with: 
@@ -77,9 +121,37 @@ Target markets were schools and universities.
                     - Linux 
                     <br>
                     - Web. 
+                </p>
+                <p>
+                    Rare thing about this device was that it supports iAP2 protocol via lightning port for communication with iOS device. 
                     <br>
+                    For that purposes we had to: 
                     <br>
-                    Rare thing about this device was that it supports iAP2 protocol via lightning port for communication with iOS device.  
+                    - get Apple MFi certification 
+                    <br>
+                    - get approval of product plan from Apple 
+                    <br>
+                    - pass iAP2/Mfi testing of the device by Apple 
+                </p>
+                <p>
+I wrote complete firmware and collaborate/consulted in the hardware design and debugging phase. Firmware is written in C using STM32CubeIDE.
+</p>
+                <p>
+Also I wrote iOS in Objective C and Windows/macOS code in C++ that supports communication with this device.
+</p>
+                <p>
+Data stream that is sent from the device to the host app is formatted according to a custom protocol that I made and that enables sending of the embedded messages inside a real time sample stream.
+</p>
+                <p>
+                    Device needed to have several additional capabilities: 
+                    <br>
+                    - firmware update capability so I had to implement custom bootloader and implement update of the firmware procedure on the Windows and the macOS app. 
+                    <br>
+                    - auditory and visual stimulation for Neuroscience experiments 
+                    <br>
+                    - event triggering that needs to be synchronized with signal within sub millisecond error 
+                    <br>
+                    - expansion port that enable user to add additional measuring devices like accelerometers etc.  
                 </p>
                 <img alt="" style="width:100%;" src="images/human2-sc67a883a331681-934.jpg" srcset="images/human2-sc67a883a331681-934.jpg 934w,images/human2-sc67a883a331681-640.jpg 640w,images/human2-sc67a883a331681-320.jpg 320w">
                 <p> </p>
@@ -327,11 +399,8 @@ These products were made for educational market (schools and universities).
                     <br>
                     - format data stream according to custom made protocol that will enable multichannel recordings and bidirectional message passing. 
                 </p>
-                <p>
-For this project we used Arduino platform to enable the students to easely modify the code.
-</p>
-                <p>
-I wrote all firmware codes for these projects in C using Arduino IDE. For this project I made C++ code that was used on host computer app to connect and communicate with SpikeShield.  </p>
+                <p>For this project we used Arduino platform to enable the students to easely modify the code.</p>
+                <p>I wrote all firmware codes for these projects in C using Arduino IDE. For this project I made C++ code that was used on host computer app to connect and communicate with SpikeShield.  </p>
                 <img alt="" style="width:100%;" src="images/image-original-sc67a89f5840320-960.jpg" srcset="images/image-original-sc67a89f5840320-1280.jpg 1280w,images/image-original-sc67a89f5840320-960.jpg 960w,images/image-original-sc67a89f5840320-640.jpg 640w,images/image-original-sc67a89f5840320-320.jpg 320w">
                 <img alt="" style="width:100%;" src="images/image-original-sc67a89f55ce687-960.jpg" srcset="images/image-original-sc67a89f55ce687-1280.jpg 1280w,images/image-original-sc67a89f55ce687-960.jpg 960w,images/image-original-sc67a89f55ce687-640.jpg 640w,images/image-original-sc67a89f55ce687-320.jpg 320w">
                 <img alt="" style="width:44.0044%;" src="images/image-original-sc67a89f7ee2c48-400.jpg" srcset="images/image-original-sc67a89f7ee2c48-400.jpg 400w">
