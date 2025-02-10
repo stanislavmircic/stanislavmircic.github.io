@@ -13,7 +13,7 @@
         <main>
             <div class="projects-grid">
                 <a href="#station" class="sc-content project-card">
-                    <img alt="" style="width:79.05138%;" src="images/spike-station-sc67a89e22b8097-320.jpg" srcset="images/spike-station-sc67a89e22b8097-908.jpg 908w,images/spike-station-sc67a89e22b8097-640.jpg 640w,images/spike-station-sc67a89e22b8097-320.jpg 320w">
+                    <img alt="" style="width:100%;" src="images/spikestation2-sc67aa5513c8a59-320.jpg" srcset="images/spikestation2-sc67aa5513c8a59-1210.jpg 1210w,images/spikestation2-sc67aa5513c8a59-960.jpg 960w,images/spikestation2-sc67aa5513c8a59-640.jpg 640w,images/spikestation2-sc67aa5513c8a59-320.jpg 320w">
                     <h3>STM32F4 firmware for  electrophys. amplifier  </h3>
                 </a>
                 <a href="#model" class="sc-content project-card">
@@ -440,24 +440,6 @@ These products were made for educational market (schools and universities).
                 <p></p>
             </section>
         </main>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                fetch('nav.html')
-                    .then(response => response.text())
-                    .then(data => {
-                        document.getElementById('header').innerHTML = data;
-                        
-                        // Highlight current page in navigation
-                        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-                        const currentLink = document.querySelector(`nav a[href="${currentPage}"]`);
-                        if (currentLink) {
-                            currentLink.classList.add('active');
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Error loading navigation:', error);
-                    });
-            });
-        </script>
+        <script>            document.addEventListener('DOMContentLoaded', function() {                fetch('nav.html')                    .then(response => response.text())                    .then(data => {                        document.getElementById('header').innerHTML = data;                                                // Highlight current page in navigation                        const currentPage = window.location.pathname.split('/').pop() || 'index.html';                        const currentLink = document.querySelector(`nav a[href="${currentPage}"]`);                        if (currentLink) {                            currentLink.classList.add('active');                        }                    })                    .catch(error => {                        console.error('Error loading navigation:', error);                    });            });        </script>
     </body>
 </html>
