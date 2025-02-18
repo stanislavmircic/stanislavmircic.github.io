@@ -72,15 +72,15 @@
                     <br>
                     Key Features: 
                     <br>
-                    - High-Frequency Sampling: Records two channels at 42 kHz, ensuring high temporal resolution. 
+                    - Records two channels at 42 kHz, ensuring high temporal resolution. 
                     <br>
-                    - Adjustable Gain: Variable gain settings ranging from 1 to 15,000, configurable through screen or from the host software. 
+                    - Variable gain settings ranging from 1 to 15,000, configurable through screen or from the host software. 
                     <br>
                     Programmable Filters: 
                     <br>
-                    - Hardware High-Pass Filter: Adjustable from 0 to 100 Hz, controllable via the host software. 
+                    - Hardware High-Pass Filter adjustable from 0 to 100 Hz, controllable via the host software. 
                     <br>
-                    - Software Notch Filter: Implemented in firmware to reduce noise. 
+                    - Software Notch Filter. Implemented in firmware to reduce mains noise (50Hz/60Hz). 
                     <br>
                     Stimulation Capabilities: 
                     <br>
@@ -96,16 +96,17 @@
                     <br>
                     Cross-Platform Compatibility: 
                     <br>
-                    - Works seamlessly with Windows, macOS, Linux, iOS, Android, and Web-based application. 
+                    - Connects to host application through USB on different platforms: Windows, macOS, Linux, iOS (iAP2 through Lightning port), Android, and Web/Chromebooks. 
                     <br>
                     Audio Control: Integrated sound control functionality. 
                     <br>
                     <br>
-                    I developed the complete firmware in C using STM32CubeIDE, ensuring optimized performance and reliability. The firmware is structured to handle precise timing, signal acquisition, and processing while managing real-time multitasking with RTOS.  
+                    I developed the complete firmware in C using STM32CubeIDE, ensuring optimized performance and reliability. The firmware is structured to handle precise stimulation timing, signal acquisition and filtering while managing user interface in RTOS and communication through USB.  
                     <br>
                     <br>
                     In addition to firmware I developed and maintained the host application for Windows/macOS/iOS in C++ and Objective-C along with the custom communication protocol for communication with the device. 
                 </p>
+                <p></p>
                 <div class="sc-html">
                     <h2 id="model">Biological neuron models in firmware </h2>
                 </div>
@@ -139,6 +140,8 @@
                     <br>
                     Goal of this device was to make device based on STM32 that will record EMG, EKG, EOG, EMG and enable additional functionalities needed for conducting Neuroscience experiments.
 Target markets were schools and universities. 
+                </p>
+                <p>
                     <br>
                     Device transmits data through composite USB and it is compatible with: 
                     <br>
